@@ -120,7 +120,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: #000;
-  /* letter-spacing: 2px; */
+  letter-spacing: 0.9px;
 }
 .topmenu > li > a.active,
 .submenu a:hover {
