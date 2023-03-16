@@ -297,7 +297,7 @@ body {
   height: 450px;
 }
 
-/* Настройки маркированного списка */
+/* Настройки эфекта для блока преподавателей */
 .hover-effect-cover {
   display: grid;
   grid-template-columns: repeat(4, 180px);
@@ -322,7 +322,7 @@ body {
 /* Заголовок, текст и ссылка */
 .hover-effect-cover .block-teach .position {
   color: #fff;
-  margin: 5px;
+  margin: 2px;
 }
 .hover-effect-cover .block-teach .name {
   color: #fff;
@@ -345,7 +345,7 @@ body {
   background: #b90909;
   color: #fff;
 }
-/* Выезжающий блок с текстом для панели слева направо */
+/* Выезжающий блок с текстом для панели */
 .hover-effect-cover .block-teach > div.effect {
   width: 100%;
   height: 100%;
@@ -363,8 +363,8 @@ body {
 }
 .hover-effect-cover .block-teach div.effect {
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
-  transition: all 0.4s ease-in-out;
+  background-color: rgba(45, 45, 68, 0.8); /* Фон блока при наведении */
+  transition: all 0.3s ease-in-out;
   color: #fff;
   transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
 }
