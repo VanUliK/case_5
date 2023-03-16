@@ -203,10 +203,6 @@ body {
 }
 .block-grid {
   padding-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 180px);
-  grid-template-rows: repeat(3, 180px);
-  gap: 40px;
 }
 .teacher-1,
 .teacher-12,
@@ -231,14 +227,6 @@ body {
 .teacher-5,
 .teacher-11 {
   border: solid 20px #c94a53;
-}
-.name,
-.position {
-  overflow: hidden;
-}
-.name:hover,
-.position:hover {
-  overflow: inherit;
 }
 
 .img-teacher {
@@ -305,4 +293,80 @@ body {
 .footer-map {
   width: 600px;
   height: 450px;
+}
+
+/* Настройки маркированного списка */
+.hover-effect-cover {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 40px;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.hover-effect-cover .block-teach {
+  position: relative;
+  width: 100%; /* Задаем ширину элемента списка с картинкой*/
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+  background-color: #fff;
+  border: 5px solid #fff;
+  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+/* Заголовок, текст и ссылка */
+.hover-effect-cover .block-teach .position {
+  color: #fff;
+  margin: 5px;
+}
+.hover-effect-cover .block-teach .name {
+  color: #fff;
+  margin: 5px;
+  font-size: 22px;
+}
+/* ссылка по умолчанию */
+.hover-effect-cover .block-teach a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+/* ссылка при наведении */
+.hover-effect-cover .block-teach a:hover {
+  background: #b90909;
+  color: #fff;
+}
+/* Выезжающий блок с текстом для панели слева направо */
+.hover-effect-cover .block-teach > div.effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hover-effect-cover .block-teach:hover > div.effect {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.hover-effect-cover .block-teach div.effect {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover .block-teach:hover div.effect {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
 }
