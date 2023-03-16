@@ -163,9 +163,10 @@ body {
 
 .content {
   background: url(./img/head.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -199,6 +200,51 @@ body {
   font-size: 16px;
   line-height: 1.19047619;
   padding-bottom: 10px;
+}
+.block-grid {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 40px;
+}
+.teacher-1,
+.teacher-12,
+.teacher-6 {
+  border: solid 20px #7c9fb0;
+}
+.teacher-2,
+.teacher-9,
+.teacher-8 {
+  border: solid 20px #9abf88;
+}
+.teacher-3,
+.teacher-10,
+.teacher-12 {
+  border: solid 20px #5698c4;
+  background-color: #5698c4;
+}
+.teacher-4,
+.teacher-7 {
+  border: solid 20px #e4bf80;
+}
+.teacher-5,
+.teacher-11 {
+  border: solid 20px #c94a53;
+}
+.name,
+.position {
+  overflow: hidden;
+}
+.name:hover,
+.position:hover {
+  overflow: inherit;
+}
+
+.img-teacher {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .footer {
   background: #2b373d;
