@@ -9,7 +9,9 @@ body {
   font-weight: 300;
   line-height: 1.25;
 }
-
+.red {
+  background-color: red;
+}
 .center {
   padding-left: calc(50% - 683px);
   padding-right: calc(50% - 683px);
