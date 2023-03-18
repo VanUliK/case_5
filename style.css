@@ -366,9 +366,81 @@ body {
   background-color: rgba(45, 45, 68, 0.8); /* Фон блока при наведении */
   transition: all 0.3s ease-in-out;
   color: #fff;
-  transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+  transform: translate(1250px, 0px) rotate(0deg); /* Направление выезжающей панели */
 }
 .hover-effect-cover .block-teach:hover div.effect {
   opacity: 1;
   transform: translate(0px, 0px) rotate(0deg);
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+  .url_head {
+    font-size: 18px;
+  }
+  .url_head:hover {
+    font-size: 18px;
+  }
+  .h1 {
+    font-size: 32px;
+  }
+
+  .h2 {
+    font-size: 26px;
+  }
+  .hover-effect-cover {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(4, 180px);
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+  .url_head {
+    font-size: 16px;
+  }
+  .url_head:hover {
+    font-size: 16px;
+  }
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h2 {
+    font-size: 24px;
+  }
+
+  .header {
+    background-color: #2d2d44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu {
+    justify-content: flex-start;
+  }
+  .topmenu > li {
+    float: none;
+  }
+  .topmenu > li > a {
+    padding: 10px 10px;
+  }
+  .submenu li a {
+    padding: 10px 10px;
+  }
+  .submenu {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .hover-effect-cover {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(6, 180px);
+  }
 }
